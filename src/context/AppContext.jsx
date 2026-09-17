@@ -3,45 +3,59 @@ import { createContext, useContext, useEffect, useState } from 'react';
 const AppContext = createContext(null);
 
 const FONT_STEPS = ['normal', 'large', 'x-large'];
+const FONT_LABELS = { normal: 'A', large: 'A+', 'x-large': 'A++' };
 
-function readStored(key, fallback) {
+function readLocal(key, fallback) {
   try {
-    const value = window.localStorage.getItem(key);
-    return value ?? fallback;
+    return window.localStorage.getItem(key) ?? fallback;
   } catch {
     return fallback;
   }
 }
 
-function writeStored(key, value) {
+function writeLocal(key, value) {
   try {
     window.localStorage.setItem(key, value);
   } catch {
-    /* storage unavailable — non-fatal, prefs just won't persist */
+    /* storage unavailable — preference just won't persist */
+  }
+}
+
+function readSession(key) {
+  try {
+    const raw = window.sessionStorage.getItem(key);
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeSession(key, value) {
+  try {
+    if (value === null) window.sessionStorage.removeItem(key);
+    else window.sessionStorage.setItem(key, JSON.stringify(value));
+  } catch {
+    /* storage unavailable — session just won't persist a reload */
   }
 }
 
 export function AppProvider({ children }) {
-  const [visitorRole, setVisitorRole] = useState(() => readStored('n79-role', ''));
-  const [highContrast, setHighContrast] = useState(() => readStored('n79-contrast', 'off') === 'on');
+  const [highContrast, setHighContrast] = useState(() => readLocal('n79-contrast', 'off') === 'on');
   const [fontStep, setFontStep] = useState(() => {
-    const stored = readStored('n79-font', 'normal');
+    const stored = readLocal('n79-font', 'normal');
     return FONT_STEPS.includes(stored) ? stored : 'normal';
   });
+  const [visitor, setVisitor] = useState(() => readSession('n79-visitor'));
 
   useEffect(() => {
     document.documentElement.dataset.contrast = highContrast ? 'high' : 'normal';
-    writeStored('n79-contrast', highContrast ? 'on' : 'off');
+    writeLocal('n79-contrast', highContrast ? 'on' : 'off');
   }, [highContrast]);
 
   useEffect(() => {
     document.documentElement.dataset.fontSize = fontStep;
-    writeStored('n79-font', fontStep);
+    writeLocal('n79-font', fontStep);
   }, [fontStep]);
-
-  useEffect(() => {
-    writeStored('n79-role', visitorRole);
-  }, [visitorRole]);
 
   function cycleFontSize() {
     setFontStep((current) => {
@@ -50,13 +64,28 @@ export function AppProvider({ children }) {
     });
   }
 
+  function login(role, details) {
+    const record = { role, ...details, since: Date.now() };
+    setVisitor(record);
+    writeSession('n79-visitor', record);
+  }
+
+  function logout() {
+    setVisitor(null);
+    writeSession('n79-visitor', null);
+  }
+
   const value = {
-    visitorRole,
-    setVisitorRole,
     highContrast,
     toggleHighContrast: () => setHighContrast((v) => !v),
     fontStep,
+    fontLabel: FONT_LABELS[fontStep],
     cycleFontSize,
+    isAuthed: Boolean(visitor),
+    visitor,
+    displayName: visitor?.displayName ?? '',
+    login,
+    logout,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

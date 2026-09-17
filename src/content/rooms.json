@@ -1,0 +1,325 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Central Atrium",
+    "code": "N79 Level 1",
+    "type": "Building hub",
+    "detail": "Entering N79 from Ring Road brings you into the building’s main engagement space. Designed for collaboration and real-world connection, the Atrium hosts conversations, industry events, presentations and study. Its video wall has 20 large monitors, while flexible seating allows the space to accommodate up to 200 people.",
+    "media": [
+      {
+        "kind": "video",
+        "title": "A classroom that reflects the workplace",
+        "youtubeId": "BBlxjoJkwkk"
+      }
+    ],
+    "level": 1
+  },
+  "2": {
+    "id": 2,
+    "name": "Simulation Studio",
+    "code": "N79 1.10",
+    "type": "Immersive learning studio",
+    "detail": "State-of-the-art augmented reality and virtual reality workstations support immersive learning and experimentation in environments that may otherwise be inaccessible. Motion-capture cameras and green screens bring movement and data together, supporting teaching and research in biomechanics, sports technology and virtual reality integration.",
+    "media": [
+      {
+        "kind": "video",
+        "title": "Open House Tour: N79",
+        "youtubeId": "ilZZ8T2ovE8"
+      }
+    ],
+    "level": 1
+  },
+  "3": {
+    "id": 3,
+    "name": "High Bay Lab",
+    "code": "N79 0.11",
+    "type": "Engineering laboratory",
+    "detail": "Visible through the Level 1 windows, the High Bay Lab has a 10-metre-high roof and supports hands-on learning, timber floor vibration testing and concrete structural strength testing. Its five-tonne overhead gantry can suspend a lightweight aircraft or medium-sized vehicle so students can practise remote inspections and test solutions using current technology.",
+    "media": [
+      {
+        "kind": "video",
+        "title": "Open House Tour: N79",
+        "youtubeId": "ilZZ8T2ovE8"
+      },
+      {
+        "kind": "link",
+        "title": "Explore the High Bay Lab in 3D",
+        "url": "https://my.matterport.com/show/?m=82bPr8eYvWv"
+      }
+    ],
+    "level": 1
+  },
+  "4": {
+    "id": 4,
+    "name": "Disaster Management Suite",
+    "code": "N79 Level 1",
+    "type": "Simulation and project space",
+    "detail": "This state-of-the-art facility supports disaster-management research, cooperative planning, scenario development and response-and-recovery training. A media room enables real-time broadcasts, the control room coordinates live video and audio feeds across five digital screens, and the operations room supports consultation, response planning and coordinated action.",
+    "access": "This is a restricted-access facility. Continue the self-guided tour from the public seating area.",
+    "level": 1
+  },
+  "5": {
+    "id": 5,
+    "name": "Planning and Collaboration Studio A",
+    "code": "N79 2.03A",
+    "type": "Teaching studio",
+    "detail": "Purpose-built workstations support future urban planners and designers as they develop spatial thinking and solutions to complex urban challenges. An operable wall connects Studios A and B for integrated teaching sessions and collaborative work.",
+    "mapPoint": 5,
+    "level": 2
+  },
+  "6": {
+    "id": 6,
+    "name": "Makerspace",
+    "code": "N79 Level 2",
+    "type": "Prototyping laboratory",
+    "detail": "Creativity and experimentation drive this multipurpose learning space. Open worktables and specialist equipment allow students to turn concepts into physical outcomes, from 3D-printed industrial-design components to a full-scale aircraft.",
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "media": [
+      {
+        "kind": "video",
+        "title": "Electronic Engineering at Griffith University",
+        "youtubeId": "qwDEcH2VWu8"
+      }
+    ],
+    "level": 2
+  },
+  "7": {
+    "id": 7,
+    "name": "Print Lab",
+    "code": "N79 Level 2",
+    "type": "Specialist laboratory",
+    "detail": "This 2D and 3D printing space supports practical teaching, model making and prototype development. Together with the neighbouring Makerspace, it gives students an immersive, hands-on environment in which to build and test their ideas.",
+    "mapPoint": 6,
+    "level": 2
+  },
+  "8": {
+    "id": 8,
+    "name": "Soils Lab",
+    "code": "N79 2.13A",
+    "type": "Engineering laboratory",
+    "detail": "The Soils Lab provides a low-risk, specialised environment for hands-on engineering teaching, research and applied learning. Students test soil properties and connect core engineering theory with practical investigation.",
+    "mapPoint": 8,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 2
+  },
+  "9": {
+    "id": 9,
+    "name": "Level 3 Learning Commons",
+    "code": "N79 Level 3",
+    "type": "Learning and collaboration space",
+    "detail": "Level 3 is where teaching meets research and mentorship. It is home to Higher Degree by Research students, engineering academics, professional staff and Griffith Sciences executive staff. Although there are no classes on this level, the people working here support student learning behind the scenes.",
+    "media": [
+      {
+        "kind": "video",
+        "title": "Biochrome art by Renata Buziak",
+        "youtubeId": "hT_j61Pbstk"
+      },
+      {
+        "kind": "link",
+        "title": "Learn about alumna Renata Buziak",
+        "url": "https://www.griffith.edu.au/advancement/notable-alumni/renata-buziak"
+      }
+    ],
+    "level": 3
+  },
+  "10": {
+    "id": 10,
+    "name": "Level 4 Collaboration Hub",
+    "code": "N79 Level 4",
+    "type": "Student collaboration space",
+    "detail": "Level 4’s common area combines open-plan seating with smaller collaborative spaces for industry meetings, student connection and study. A wall of screens can display imagery, information and supporting material for events.",
+    "mapPoint": null,
+    "level": 4
+  },
+  "13": {
+    "id": 13,
+    "name": "Level 5 Science Laboratory",
+    "code": "N79 Level 5",
+    "type": "Science teaching laboratory",
+    "detail": "Focused on sustainability and environmental science, this laboratory allows students to test water and environmental samples, study ecosystems and examine environmental impacts. It connects science learning with real-world environmental challenges.",
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 5
+  },
+  "14": {
+    "id": 14,
+    "name": "Chemistry Laboratories",
+    "code": "N79 Level 5",
+    "type": "Chemistry teaching laboratories",
+    "detail": "The compendium identifies this space as the Level 5 Super Lab for chemistry. Its detailed room information is still being drafted.",
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 5
+  },
+  "15": {
+    "id": 15,
+    "name": "Bioscience Laboratories",
+    "code": "N79 Level 5",
+    "type": "Bioscience teaching laboratories",
+    "detail": "This state-of-the-art Physical Containment Level 2 laboratory handles biologically sensitive experiments under strict occupational health and safety protocols, including mandatory induction and training. Practical classes in biomedical science, biomolecular science and biotechnology develop core laboratory skills and workplace safety knowledge.",
+    "access": "Entry requires a formal induction and compliance with laboratory safety procedures.",
+    "media": [
+      {
+        "kind": "video",
+        "title": "Forensic Science at Griffith",
+        "youtubeId": "MDOEn9wu0C4"
+      }
+    ],
+    "level": 5
+  },
+  "16": {
+    "id": 16,
+    "name": "Cyber Physical Systems Lab",
+    "code": "N79 4.07",
+    "type": "Cyber physical systems laboratory",
+    "detail": "The Cyber Physical Systems Lab focuses on the security challenges and vulnerabilities found in systems that combine physical and computational components, including industrial control systems and autonomous vehicles.",
+    "mapPoint": 10,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 4
+  },
+  "17": {
+    "id": 17,
+    "name": "Mechatronics Lab",
+    "code": "N79 4.09",
+    "type": "Mechatronics laboratory",
+    "detail": "The Mechatronics Lab forms part of Level 4’s advanced-technology teaching area, where hands-on training connects emerging technologies with engineering practice. It sits alongside the Cyber Physical Systems and Cyber Security laboratories at the end of the hall.",
+    "mapPoint": 10,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 4
+  },
+  "18": {
+    "id": 18,
+    "name": "Cyber Security Lab",
+    "code": "N79 4.10",
+    "type": "Cyber security laboratory",
+    "detail": "This specialist laboratory supports cyber incident response, ethical hacking and advanced cyber security training. Through hands-on simulations of cyber attacks, students learn to identify digital threats, manage security incidents and build resilient digital infrastructure.",
+    "mapPoint": 10,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 4
+  },
+  "19": {
+    "id": 19,
+    "name": "Flight Procedures Lab",
+    "code": "N79 Level 4",
+    "type": "Aviation simulation laboratory",
+    "detail": "The Flight Procedures Lab brings aviation theory to life through virtual-reality headsets, professional flight controllers, throttle quadrants and authentic desktop simulators. Configurable aircraft range from a Cessna 172 to a Boeing 737, and students can use the facilities outside workshop hours to practise procedures and build confidence at their own pace.",
+    "mapPoint": 11,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "media": [
+      {
+        "kind": "video",
+        "title": "Flight Procedures Lab at Griffith",
+        "youtubeId": "rn47E_t9ie8"
+      }
+    ],
+    "level": 4
+  },
+  "20": {
+    "id": 20,
+    "name": "Applied Networking Lab",
+    "code": "N79 4.15",
+    "type": "Networking laboratory",
+    "detail": "The Applied Networking Lab is one of Level 4’s flexible computer laboratories designed for advanced technologies. The multipurpose space combines collaboration and informal learning while supporting practical work in networking and related digital systems.",
+    "mapPoint": 12,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "media": [
+      {
+        "kind": "video",
+        "title": "Study information technology at Griffith University",
+        "youtubeId": "ikLiT4FwFFU"
+      }
+    ],
+    "level": 4
+  },
+  "21": {
+    "id": 21,
+    "name": "Artificial Intelligence Labs",
+    "code": "N79 4.16–4.17",
+    "aliases": [
+      "N79 4.16",
+      "N79 4.17"
+    ],
+    "type": "Artificial intelligence laboratories",
+    "detail": "These flexible computer laboratories support teaching in artificial intelligence and machine learning. Their multipurpose layout is designed to combine advanced-technology learning with collaboration and informal study.",
+    "mapPoint": 12,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 4
+  },
+  "22": {
+    "id": 22,
+    "name": "MAC Lab",
+    "code": "N79 4.18",
+    "type": "Computer laboratory",
+    "detail": "The MAC Lab is one of Level 4’s flexible computer laboratories for advanced-technology teaching. Its multipurpose layout supports practical digital work, collaboration and informal learning.",
+    "mapPoint": 12,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 4
+  },
+  "23": {
+    "id": 23,
+    "name": "Internet of Things Lab",
+    "code": "N79 4.19",
+    "type": "Internet of Things laboratory",
+    "detail": "The Internet of Things Lab is one of Level 4’s flexible advanced-technology laboratories. Its multipurpose layout supports practical learning about connected technologies while combining collaboration and informal study.",
+    "mapPoint": 12,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 4
+  },
+  "24": {
+    "id": 24,
+    "name": "Planning and Collaboration Studio B",
+    "code": "N79 2.03B",
+    "type": "Teaching studio",
+    "detail": "Purpose-built workstations support future urban planners and designers as they develop spatial thinking and solutions to complex urban challenges. An operable wall connects Studios A and B for integrated teaching sessions and collaborative work.",
+    "mapPoint": 5,
+    "level": 2
+  },
+  "25": {
+    "id": 25,
+    "name": "Project Studio",
+    "code": "N79 2.14",
+    "type": "Engineering project studio",
+    "detail": "Located between the engineering laboratories, the Project Studio supports laboratory overflow, collaboration and big ideas. It accommodates up to 95 people and combines laboratory work with group work, hands-on workshops and presentations.",
+    "mapPoint": 8,
+    "level": 2
+  },
+  "26": {
+    "id": 26,
+    "name": "Materials Lab",
+    "code": "N79 2.15A",
+    "type": "Engineering laboratory",
+    "detail": "The Materials Lab provides a low-risk, specialised environment for hands-on engineering teaching, research and applied learning. Students analyse material strength and connect core engineering theory with practical investigation.",
+    "mapPoint": 8,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 2
+  },
+  "27": {
+    "id": 27,
+    "name": "Hydraulics Lab",
+    "code": "N79 2.15B",
+    "type": "Engineering laboratory",
+    "detail": "The Hydraulics Lab provides a low-risk, specialised environment for hands-on engineering teaching, research and applied learning. Students explore fluid mechanics and connect core engineering theory with practical investigation.",
+    "mapPoint": 8,
+    "access": "Laboratory entry requires the relevant safety induction.",
+    "level": 2
+  },
+  "28": {
+    "id": 28,
+    "name": "Digital Studio",
+    "code": "N79 Level 2",
+    "type": "Digital modelling studio",
+    "detail": "Created through a partnership between Griffith University and Bentley Systems, the Digital Studio has more than 30 high-performance, dual-screen computers equipped with Bentley Suite software. Students use the studio for intensive design and infrastructure modelling, large-scale visualisation and digital-twin projects involving structural data, sustainability and emergency planning.",
+    "mapPoint": 7,
+    "media": [
+      {
+        "kind": "video",
+        "title": "Griffith Sciences and Bentley Systems join forces",
+        "youtubeId": "U4S7b6w8YNs"
+      },
+      {
+        "kind": "video",
+        "title": "What is a Digital Twin?",
+        "youtubeId": "SKpoDCLmBIk"
+      }
+    ],
+    "level": 2
+  }
+}
