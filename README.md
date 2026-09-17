@@ -1,44 +1,25 @@
-# N79 Navigator — Griffith University Digital Self-Tour
+# N79 Digital Self-Tour — Prototype
 
-A self-guided, accessible wayfinding app for Griffith University's N79 building (Henry Smerdon
-Engineering, Technology and Aviation), built for Team 02's 3821ICT/7821ICT Work Integrated
-Learning project.
+A self-guided, accessible tour prototype for Griffith University's N79 building, built for
+Team 02's 3821ICT/7821ICT Work Integrated Learning project. This is the first coded prototype
+described in [`BUILD_PLAN.md`](./BUILD_PLAN.md) — it covers the ground floor only, with sample
+placeholder content standing in for the client's approved material.
 
-Live deployment: https://singleproject.vercel.app
+## What's in this prototype
 
-## What's in this build
+- **Landing screen** — Student / Staff / Guest entry point (no real login; role only tailors the
+  welcome message and is never sent anywhere).
+- **Home / navigation screen** — ground-floor points of interest as a list or a simplified map,
+  filterable by category.
+- **Search** — find a room, lab or facility by name, category, or description.
+- **Point-of-interest detail** — name, location, description, a placeholder image, and an optional
+  video/audio slot with a captions note and a toggleable transcript.
+- **Accessibility** — skip-to-content link, full keyboard navigation, a high-contrast mode, a
+  three-step text-size control, and alt text / transcripts on every media element.
 
-- **Landing screen** — building overview with quick links to login, the Wi-Fi guide and the
-  About page.
-- **About N79** — the building's story, key stats and what's inside.
-- **Login** — Student, Staff or Guest entry (no real authentication; the session lives only in
-  this browser tab and is never sent anywhere).
-- **Room directory** — all five levels of N79, each with a searchable room/lab list and an
-  interactive floor plan (click-to-zoom, drag-to-pan, keyboard zoom and pan).
-- **Room details** — a photo gallery, description, access notes, and any related video or
-  external resource (e.g. a Matterport 3D tour) for each room or lab.
-- **Wi-Fi guide** — step-by-step connection instructions for students & staff, visitors, and
-  eduroam users.
-- **Profile** — account status and sign-out.
-
-## Accessibility features
-
-- Skip-to-content link on every page.
-- A **high-contrast mode** (header toggle) that swaps the theme for a WCAG AAA–contrast
-  black/white/yellow palette — covers every page, form, photo overlay and map hotspot, not just
-  the base colours.
-- A three-step **text size** control. Typography is defined in `rem` and scaled from a single
-  `--font-scale` custom property, so every heading, label and button grows together without
-  breaking layout.
-- Full keyboard support on the interactive floor plan (+/- to zoom, arrow keys to pan once
-  zoomed) in addition to the on-screen zoom controls.
-- Semantic landmarks, `aria-current`/`aria-pressed`/`aria-selected` state on navigation and
-  toggles, and real `role="tablist"`/`tab`/`tabpanel` wiring on the Wi-Fi and login role tabs.
-- Real `<a>`/`<Link>` elements for in-app navigation (not click handlers on `<div>`/`<button>`),
-  so opening a page in a new tab, right-click, and browser history all work as expected.
-- `prefers-reduced-motion` is respected; all transitions and the auth-loading spinner are
-  disabled for visitors who request it.
-- Alt text on every photo, and a captions note on embedded video.
+All content lives in [`src/content/tourStops.json`](./src/content/tourStops.json) — update that
+file to swap in the client's real ground-floor rooms, descriptions and approved media without
+touching any component code.
 
 ## Getting started
 
@@ -47,22 +28,22 @@ npm install
 npm run dev       # local dev server with hot reload
 npm run build      # production build to dist/
 npm run preview    # serve the production build locally
-npm run lint       # oxlint
 ```
 
 ## Tech stack
 
-React 19 + Vite + React Router (`HashRouter`, so the built app works unchanged on Vercel, GitHub
-Pages, or any static host), plain CSS with theme custom properties (`src/index.css`), and local
-JSON content (`src/content/`) — no backend.
+React + Vite + React Router, plain CSS with theme custom properties (see `src/index.css`), and a
+local JSON content file — no backend, per the proposed stack in the project proposal (§5.3).
 
-## Content
+## What's placeholder vs. real
 
-Room and level data lives in [`src/content/rooms.json`](./src/content/rooms.json) and
-[`src/content/levels.json`](./src/content/levels.json); photography lives under
-`src/assets/rooms/room-<id>/`. `src/content/rooms.js` and `src/content/levels.js` merge that data
-with the actual image assets (via `import.meta.glob`) and resolve which rooms share a single map
-hotspot, so updating a room's copy or swapping a photo never touches component code.
+Everything content-wise is clearly marked as sample data: room names, descriptions, and the
+gradient "photo" tiles standing in for real photography. The floor layout in Map view is a
+schematic grid, not the official floor plan — swap it once Griffith supplies approved floor-plan
+artwork. Brand colours/typography in `src/index.css` (`:root`) are placeholders pending Griffith's
+approved brand assets.
 
-See [`BUILD_PLAN.md`](./BUILD_PLAN.md) for the original build plan and requirements traceability
-from the first prototype.
+## Next steps
+
+See [`BUILD_PLAN.md`](./BUILD_PLAN.md) for the full plan: content model, requirements traceability,
+suggested sprint sequence, and open questions for the client.
